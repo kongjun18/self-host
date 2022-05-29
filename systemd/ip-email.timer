@@ -1,0 +1,8 @@
+[Unit]
+Description=Send IP address when IP addresss changes
+
+[Timer]
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=multi-user.target

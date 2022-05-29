@@ -1,0 +1,10 @@
+[Unit]
+After=networking.service
+Requires=networking.service
+StartLimitIntervalSec=1000
+StartLimitBurst=5
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/src/sendmail.py
+Restart=on-failure
+RestartSec=1m
